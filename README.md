@@ -5,9 +5,8 @@ This is a work-in-progress website for Studio Madsadcat.
 
 ## Credits
 
-This website makes use of [Nathan Randecker's theme 'Particle'](https://github.com/nrandecker/particle)
-
-
-This theme was partially designed with the inspiration from these fine folks
+This website was designed with the following theme/inspiration
+- [Nathan Randecker's theme 'Particle'](https://github.com/nrandecker/particle)
+- [Clay Larson's responsive timeline](https://codepen.io/cjl750/pen/XMyRoB)
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
