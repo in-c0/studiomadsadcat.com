@@ -88,3 +88,51 @@
         text-align: left;
     }
 }
+
+.timeline-item {
+    cursor: pointer;
+}
+
+.timeline-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.timeline-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Your responsive styles for smaller screens */
+}
+
+.timeline-content.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.timeline-icon.active {
+    transform: scale(1.2);
+}
+
+.timeline-item:hover .timeline-icon, 
+.timeline-item:hover .timeline-content {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.timeline-content:hover .tooltip {
+    display: block;
+}

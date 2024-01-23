@@ -116,3 +116,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 }, false);
+
+document.querySelectorAll('.timeline-item').forEach(item => {
+  item.addEventListener('mouseenter', function() {
+      this.querySelector('.timeline-content').classList.add('active');
+  });
+
+  item.addEventListener('mouseleave', function() {
+      this.querySelector('.timeline-content').classList.remove('active');
+  });
+});
