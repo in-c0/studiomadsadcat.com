@@ -1,46 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@media all and (max-width: 500px) {
+  .current-time-display {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Lato", sans-serif;
+    background: #272727;
+    color: #ffd868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-body {
-  font-family: "Lato", sans-serif;
-  background: #272727;
-  color: #ffd868;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  .display-date {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
 
-.display-date {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
+  .display-time {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-.display-time {
-  display: flex;
-  font-size: 5rem;
-  font-weight: bold;
-  border: 2px solid #ffd868;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: ease-in-out 0.1s;
-  transition-property: background, box-shadow, color;
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, rgba(255, 255, 255, 0.05));
-}
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    border: 2px solid #ffd868;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+    transition-property: background, box-shadow, color;
+    -webkit-box-reflect: below 2px
+      linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+  }
 
-.display-time:hover {
-  background: #ffd868;
-  box-shadow: 0 0 30px#ffd868;
-  color: #272727;
-  cursor: pointer;
+  .display-time:hover {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    background: #ffd868;
+    box-shadow: 0 0 30px#ffd868;
+    color: #272727;
+    cursor: pointer;
+  }
+
 }
 
 html {
