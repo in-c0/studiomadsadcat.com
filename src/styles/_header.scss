@@ -13,13 +13,17 @@
   }
 }
 
-.studio-logo {
-  text-align: center;
-}
+@media (max-width: 300px) {
+  .responsive-image {
+    width: 50%;
+    max-width: 150px; 
+    height: auto;
+  }
 
-.responsive-image {
-  max-width: 300px; 
-  height: auto;
+  .studio-logo {
+    text-align: center;
+  }
+  
 }
 
 .header {
