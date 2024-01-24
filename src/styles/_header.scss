@@ -13,16 +13,6 @@
   }
 }
 
-.studio-logo {
-  text-align: center;
-}
-
-.responsive-image {
-  width: 80%;
-  max-width: 300px; 
-  height: auto;
-}
-
 .header {
   z-index: 1;
   text-align: center;
@@ -33,6 +23,19 @@
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  
+  .studio-logo {
+    text-align: center;
+    display: block;
+  }
+
+  .responsive-image {
+    width: 80%;
+    max-width: 300px; 
+    height: auto;
+  }
+
   .site-title {
     font-size: 30px;
     display: block;
