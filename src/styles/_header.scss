@@ -14,16 +14,11 @@
 }
 
 @media (max-width: 300px) {
-  .responsive-image {
-    width: 50%;
-    max-width: 150px; 
+  img.responsive-image {
+    width: 100%;
+    max-width: 500px; 
     height: auto;
-  }
-
-  .studio-logo {
-    text-align: center;
-  }
-  
+  }  
 }
 
 .header {
