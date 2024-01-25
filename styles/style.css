@@ -1,4 +1,38 @@
 html {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
+    background-color: #A1C181;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+p {    
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #A1C181;
+    padding: 0 40px 40px 40px;
+    border: 5px solid black;
+}
+
+img {
+    max-width: fit-content;
+    max-block-size: 50%;
+    display: block;
+    margin: 0 auto;
 }
