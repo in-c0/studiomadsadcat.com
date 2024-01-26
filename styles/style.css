@@ -56,8 +56,10 @@ img {
 
 
 @media (max-width: 600px) {
+
     body {
         padding: 0 30px;
+        border: none;
     }
 
     h1 {
@@ -75,6 +77,24 @@ img {
         text-align: center;
     }
 }
+
+.progress-container {
+    width: 300px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 24px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+    display: flex;
+    padding-left: 7px;
+}
+
 .download-buttons {
     text-align: center;
     padding: 20px;
