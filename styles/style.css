@@ -78,11 +78,22 @@ img {
     }
 }
 
-.progress-container {
+div.progress-container {
     width: 300px;
     background-color: #ddd;
     border-radius: 5px;
 }
+
+.remaining-time {
+    p
+    {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+        line-height: 0;
+        letter-spacing: 0px;
+    }
+}
+
 
 .progress-bar {
     height: 24px;
