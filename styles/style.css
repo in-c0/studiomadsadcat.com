@@ -12,7 +12,7 @@ html {
 body {
     max-width: 800px;
     width: 100%;
-    margin: 0 auto;
+    margin: 40px auto;
     background-color: #A1C181;
     box-sizing: border-box; 
     padding: 0 40px 40px 40px;
@@ -74,4 +74,38 @@ img {
     .container, .display-date {
         text-align: center;
     }
+}
+.download-buttons {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px; /* Adjust spacing as needed */
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.google-play {
+    background-color: #A4C639;
+}
+
+.app-store {
+    background-color: #0D96F6;
+}
+
+.windows-store {
+    background-color: #5E5E5E;
 }
