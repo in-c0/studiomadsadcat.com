@@ -11,10 +11,11 @@ function updateTimeProgress() {
     const monthProgress = (now - startOfMonth) / (endOfMonth - startOfMonth);
     document.getElementById("monthBar").style.width = (monthProgress * 100) + '%';
 
-    const startOfWeek = new Date(now.setDate(now.getDate() - now.getDay()));
-    const endOfWeek = new Date(now.setDate(now.getDate() - now.getDay() + 7));
+    const nowForWeek = new Date();
+    const dayOfWeek = nowForWeek.getDay(); // Day of week (0 is Sunday)
+    const startOfWeek = new Date(nowForWeek.getFullYear(), nowForWeek.getMonth(), nowForWeek.getDate() - dayOfWeek);
+    const endOfWeek = new Date(startOfWeek.getFullYear(), startOfWeek.getMonth(), startOfWeek.getDate() + 7);
     const weekProgress = (now - startOfWeek) / (endOfWeek - startOfWeek);
-    document.getElementById("weekBar").style.width = (weekProgress * 100) + '%';
 
     const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
@@ -34,9 +35,9 @@ function updateTimeProgress() {
     
     function updateBar(id, progress) {
         const bar = document.getElementById(id);
-        const percentage = (progress * 100).toFixed(0) + '%'; // Keeping two decimal places for precision
+        const percentage = (progress * 100).toFixed(0) + '%';
         bar.style.width = percentage;
-        bar.textContent = percentage; // Update the text content
+        bar.textContent = percentage;
     }
 
     updateBar("yearBar", yearProgress);
