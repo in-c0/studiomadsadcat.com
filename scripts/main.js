@@ -1,5 +1,9 @@
+
+
 function updateTimeProgress() {
-    const now = new Date();
+    var now = new Date();
+    var dateTime = now.toLocaleString();
+    document.getElementById("date-time").innerHTML = dateTime;
 
     const startOfYear = new Date(now.getFullYear(), 0, 1);
     const endOfYear = new Date(now.getFullYear() + 1, 0, 1);
@@ -48,6 +52,6 @@ function updateTimeProgress() {
     updateBar("minuteBar", minuteProgress);
 }
 
-setInterval(updateTimeProgress, 600);
+setInterval(updateTimeProgress, 300);
 
 document.addEventListener('DOMContentLoaded', updateTimeProgress);
